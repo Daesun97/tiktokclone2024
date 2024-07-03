@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "tiktokclone-dbseotjs",
+          "appId": "1:572876146204:android:a676cea475700be49301d9",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "tiktokclone-dbseotjs",
+          "configurations": {
+            "android": "1:572876146204:android:a676cea475700be49301d9",
+            "ios": "1:572876146204:ios:0c2a175169be8ed29301d9",
+            "web": "1:572876146204:web:4fbd8488bce27fd19301d9"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ]
+}
